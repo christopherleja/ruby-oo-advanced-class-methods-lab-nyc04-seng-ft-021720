@@ -53,8 +53,8 @@ class Song
     artist_name = name[0]
   end
   
-  def song.create_from_filename(name)
-    name = name.split(/ - |.mp3/)
+  def song.create_from_filename(filename)
+    name = filename.split(/ - |.mp3/)
     song = Song.new_by_name(name[1])
     
   end
