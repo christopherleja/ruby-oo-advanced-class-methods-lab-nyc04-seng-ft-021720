@@ -50,8 +50,8 @@ class Song
   def self.new_from_filename(name)
     song = self.new_by_name(name[1])
     name = name.split(/ - |.mp3/)
-    song.name = name[1]
-    song.artist_name = name[0]
+    @name = name[1]
+    @artist_name = name[0] 
   end
   
   def self.create_from_filename(filename)
